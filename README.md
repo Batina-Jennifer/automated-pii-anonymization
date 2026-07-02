@@ -62,8 +62,10 @@ You need to tell your terminal to step inside the project folder you just downlo
 <code>cd automated-pii-anonymization</code>
 
 ### Step 3: Turn on the Virtual Environment Sandbox
-You will use an isolated sandbox called a virtual environment (.venv) so these packages don't mess up any other files on your machine. Turn it on by running the command that matches your operating system:
-* Windows (PowerShell): <code>.\.venv\Scripts\Activate.ps1</code>
+You will use an isolated sandbox called a virtual environment (.venv) so these packages don't mess up any other files on your machine. 
+1. Create the sandbox folder: <code>python -m venv .venv</code>
+2. Turn it on by running the command that matches your operating system:
+* Windows (PowerShell): <code>.\\.venv\Scripts\Activate.ps1</code>
 * Mac / Linux (Terminal): <code>source .venv/bin/activate</code> </br>
 Look at the very left edge of your terminal line. You should now see (.venv) sitting in front of your folder path.
 
