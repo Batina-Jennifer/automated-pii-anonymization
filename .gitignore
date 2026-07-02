@@ -1,0 +1,8 @@
+# Ignore the virtual environment folder
+.venv/
+venv/
+__pycache__/
+
+# Ignore local data files generated during testing
+raw_data.csv
+masked_pii_data.csv
