@@ -4,7 +4,8 @@ A professional Python-based DevSecOps automation tool designed to secure product
 
 This project aligns directly with data protection principles outlined in **CompTIA Security+** and international compliance frameworks like **GDPR**.
 
----
+## 📽️ Project Demonstration
+Watch the full video walkthrough of the automation pipeline on [Loom Video Demo](https://www.loom.com/share/e1ca12576be349d397593f754d43415e).
 
 ## 🚀 The Enterprise Challenge
 In modern engineering workflows, software developers and QA testers require realistic datasets to build features and run tests. However, duplicating real production databases into lower environments creates severe compliance violations and exposes actual user identities (names, credentials, tracking footprints) to unnecessary security risks.
@@ -20,8 +21,6 @@ Instead of deleting columns or replacing data with static blocks (e.g., `XXXXXX`
 3. **Anonymization Phase:** Replaces sensitive cells with synthetically valid information.
 4. **Export Phase:** Writes a clean, safe `masked_pii_data.csv` optimized for staging and testing environments.
 
----
-
 ## 📋 Monitored PII Columns & Compliance Mapping
 The anonymization engine targets 5 distinct fields classified as high-risk under privacy regulations:
 
@@ -33,15 +32,11 @@ The anonymization engine targets 5 distinct fields classified as high-risk under
 | `Phone_Number` | Direct Contact PII | Replaced with structurally correct, realistic phone strings |
 | `IP_Address` | Network Tracking Footprint / Location | Overwritten with valid IPv4 schemas to preserve network logs |
 
----
-
 ## 🧪 Technical Stack & Tools
 * **Python 3** (Core Logic)
 * **Virtual Environments (`.venv`)** (Local dependency isolation)
 * **Pandas Library** (High-performance in-memory data structures and CSV manipulation)
 * **Faker Library** (Synthetic data generation engine)
-
----
 
 ## 📖 How to Install & Run
 
@@ -50,8 +45,6 @@ Follow these steps to run the data security pipeline inside an isolated virtual 
 
 ### Prerequisites
 Make sure you have **Python 3** and **Git** installed on your computer. If you are using Windows, I recommend running these commands inside the **PowerShell** terminal (or the terminal built directly into VS Code).
-
----
 
 ### Step 1: Clone the Project to Your Computer
 Open your computer's terminal, navigate to the folder where you like to save your projects (like your Desktop or a Documents folder), and paste this command to download the code:
